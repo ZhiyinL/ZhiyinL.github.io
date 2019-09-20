@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rollercoaster!
+title: Rollercoaster Ranking Project
 ---
 Nowadays, a great many websites provide roller coaster rankings which rely too much on personal feedbacks, misleading the selection of future riders. Our team construct an algorithm to rank the world-wide roller coasters and an app to help people find their best “roller coaster date”.
 
