@@ -27,7 +27,18 @@ a) Dimensionality reduction first and then run the codes
 b) Try a simpler model such as gradient booster. 
 
 **January 8th**
+I tried to underfit with Augmentation Method 2 by decreasing the width and the depth of the network and increase the augmentation severity. However, the performance of the model is not good at all. Therefore, I officially decided to move towards a new direction: dimensionality reduction to solve this overfitting problem.
 
+I computed the Pearson correlations between each input feature and the target variable and selected the top 15 most correlated input features for future training. From a medical practice standpoint, producing better results from fewer tests is a benefit. Here's a screenshot of the pearson correlation. 
+<img src="/images/Pearson_Corr.png" width="600"/>
+
+After dimensionality reduction, I tried a couple of models. I tried linear regression and polynomial regression. The results are not quite promising as suggested by the R^2 values below.
+<img src="/images/Pearson_Corr.png" width="600"/>
+<img src="/images/Pearson_Corr.png" width="600"/>
+
+ The neural networks perform a MSE = 5774 month^2, which is a really promising result compared to the previous 8000 month^2. 
+
+ I plan to try simpler models tomorrow, including gradient boost, support vector machines, and random forests. 
 **January 9th**
 
 **January 10th**
