@@ -40,7 +40,7 @@ After dimensionality reduction, I tried a couple of models. I tried linear regre
 
  I plan to try simpler models tomorrow, including gradient boost, support vector machines, and random forests. 
 **January 9th**
-
+I tried simpler models such as gradient boost and random forest. Moreover, I tuned hyperparamters with grid Search to enhance the performance of the model . Also, I shuffled the training points every epoch for neural network. My plan for next is to do SVD for dimensionality reduction, which is an alternate for the Pearson correlation I did. Since medically speaking, interactions between different features in the clinical data also count towards deciding on optimal treatment options. Therefore, it makes since to use SVD. Also, I will try to augment the pearson correlation selected data with method 2. 
 **January 10th**
 
 **January 13th**
