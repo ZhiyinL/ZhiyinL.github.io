@@ -42,7 +42,7 @@ After dimensionality reduction, I tried a couple of models. I tried linear regre
 **January 9th**
 I tried simpler models such as gradient boost and random forest. Moreover, I tuned hyperparamters with grid Search to enhance the performance of the model . Also, I shuffled the training points every epoch for neural network. My plan for next is to do SVD for dimensionality reduction, which is an alternate for the Pearson correlation I did. Since medically speaking, interactions between different features in the clinical data also count towards deciding on optimal treatment options. Therefore, it makes since to use SVD. Also, I will try to augment the pearson correlation selected data with method 2. 
 **January 10th**
-
+I realized that I should still keep the treatment option features regardless of the dimensionality results. Therefore, we. I also tried SVD for dimensionality reduction instead of Pearson correlation, hoping for better performance of other models. However, the SVD models perform worse than the Pearson correlation models, which is surprisingly disappointing to me. I also tried augmentation method 2 with pearson correlation, and I did not get a much better result for neural network. My plan for next is to turn this into a classification problem.
 **January 13th**
 
 **January 15th**
