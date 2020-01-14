@@ -39,11 +39,15 @@ After dimensionality reduction, I tried a couple of models. I tried linear regre
  The neural networks perform a MSE = 5774 month^2, which is a really promising result compared to the previous 8000 month^2. 
 
  I plan to try simpler models tomorrow, including gradient boost, support vector machines, and random forests. 
+
 **January 9th**
 I tried simpler models such as gradient boost and random forest. Moreover, I tuned hyperparamters with grid Search to enhance the performance of the model . Also, I shuffled the training points every epoch for neural network. My plan for next is to do SVD for dimensionality reduction, which is an alternate for the Pearson correlation I did. Since medically speaking, interactions between different features in the clinical data also count towards deciding on optimal treatment options. Therefore, it makes since to use SVD. Also, I will try to augment the pearson correlation selected data with method 2. 
+
 **January 10th**
 I realized that I should still keep the treatment option features regardless of the dimensionality results. Therefore, we. I also tried SVD for dimensionality reduction instead of Pearson correlation, hoping for better performance of other models. However, the SVD models perform worse than the Pearson correlation models, which is surprisingly disappointing to me. I also tried augmentation method 2 with pearson correlation, and I did not get a much better result for neural network. My plan for next is to turn this into a classification problem.
-**January 13th**
+
+**January 13th, 14th**
+Turning this problem into a classification problem, I tried algorithms including support vector machine, KNN, Naive Bayes, Gradient Boosting with and without cross validation. Most of the models, except for Naive Bayes, got similar results (around 75% accuracy). However, the model's precision values is low, which means the model is bad at differentiate the survivability of a patient who, in reality, is deceased at 5 year cut off. I think the reason behind it is because the number of samples that are deceased after 5 years in the dataset is less than the number of samples that are alive, which is a classific class imbalance problem. I plan to deal with class balance by duplicating data point on train data. Also, I'm half way through building the neural network classifier, which I plan to finish by this Thursday.
 
 **January 15th**
 
