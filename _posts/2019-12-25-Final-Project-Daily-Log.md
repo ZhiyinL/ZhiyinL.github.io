@@ -50,6 +50,8 @@ I realized that I should still keep the treatment option features regardless of 
 Turning this problem into a classification problem, I tried algorithms including support vector machine, KNN, Naive Bayes, Gradient Boosting with and without cross validation. Most of the models, except for Naive Bayes, got similar results (around 75% accuracy). However, the model's precision values is low, which means the model is bad at differentiate the survivability of a patient who, in reality, is deceased at 5 year cut off. I think the reason behind it is because the number of samples that are deceased after 5 years in the dataset is less than the number of samples that are alive, which is a classific class imbalance problem. I plan to deal with class balance by duplicating data point on train data. Also, I'm half way through building the neural network classifier, which I plan to finish by this Thursday.
 
 **January 15th**
+I dealt with class imbalance using the resample method of sklearn. I improved the f1 score of the minority class even though the overall accuracy drops slightly. Also, I tried random forest algorithm, which has similar results to the other algorithms. I plan to debug my Neural Network.
+
 
 **January 16th**
 
