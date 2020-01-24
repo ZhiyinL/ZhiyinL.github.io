@@ -54,5 +54,6 @@ I dealt with class imbalance using the resample method of sklearn. I improved th
 
 
 **January 16th**
+I encountered a bug that I could not figure out. I searched online on stackoverflow, pytorch discuss threads, and random posts, but I still could not figure out. Haha, nevermind. Right before I went to bed, I figured it out! It was a bug during training the classifier. Initially, I used the loss function torch.nn.BCELoss(), which does not automatically include a sigmoid function as the activation function. This gives an out of bound error. I solve this by using a different loss function: torch.nn.BCEWithLogitsLoss(). 
 
 **January 17th**
